@@ -1,0 +1,123 @@
+/******************/
+/* Global Styling */
+/******************/
+body{margin: 0px;}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+p,a,li{
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+.example{
+  padding: 2% 5%;
+  background-color: #fff;
+}
+header{
+  height: 125px;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+}
+.logo-container{
+  height: 110px;
+  flex-grow: 1;
+}
+.logo-container a img{
+  height: 100%;
+  width: auto;
+}
+header nav menu{
+  list-style: none;
+  display: flex;
+}
+header nav menu li{
+  padding: 0px 15px;
+}
+header nav menu li a{
+  color: #fff;
+}
+footer{
+  padding: 5%;
+  background-color: #000;
+}
+footer h5{
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/hero-1.jpg');
+  background-size: cover;
+}
+.hero div{
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.hero div h1{
+  color: #fff;
+  font-size: 4em;
+  text-align: center;
+}
+#div1{
+  height: 100px;
+  width: 300px;
+  padding: 10px;
+  border: solid 2px blue;
+  background-color: lightblue;
+}
+table{
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, tr{
+  border: solid 2px #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+tr:nth-child(even){
+  background-color: #dddddd;
+}
+#accordian li{
+  list-style-type: none;
+}
+#accordian h3{
+  font-size: 1.2em;
+  line-height: 55px;
+  padding: 0 8px;
+  cursor: pointer;
+  color: #999999;
+  margin-bottom: 8px;
+  background-color: #f8f8f8;
+}
+#accordian h3 span{
+  background-image: url("../img/fake-logo.png");
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  float: left;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+#accordian .row{
+  margin: 0;
+  background-color: #f8f8f8;
+  display: none;
+}
+#accordian li.active .row{
+  display: block;
+}
+#accordian li.active h3{
+  background-color: #e6e6e6;
+  color: #b4a078;
+}

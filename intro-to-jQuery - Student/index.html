@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <!-- This week we will be including our CSS and metadata using jQuery to include a file containing the information. -->
+  <head id="head">
+    <title>Home | Working with jQuery</title>
+    <meta name="description" content="This week we will take a look at jQuery">
+    <!-- jQuery link This must be placed before the link to our custom js ... https://releases.jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- add our custom js file -->
+    <script type="text/javascript" src="./js/custom-js.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Working with jQuery</h1>
+        </div>
+      </section>
+      <!-- these sections will have a global class applied to them -->
+      <section class="example">
+        <div>
+          <h3>Display the Width & Height</h3>
+          <div id="div1"></div>
+          <button class="btn-1">Display the Dimensions</button>
+        </div>
+        <div>
+          <h3>Filter the Table</h3>
+          <p><input id="myInput" type="text" placeholder="Search ..."></p>
+          <table>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@email.ca</td>
+              </tr>
+              <tr>
+                <td>Patty</td>
+                <td>Smith</td>
+                <td>patty@email.ca</td>
+              </tr>
+              <tr>
+                <td>Ricky</td>
+                <td>Bobby</td>
+                <td>firstorlast@email.ca</td>
+              </tr>
+              <tr>
+                <td>Peter</td>
+                <td>Parker</td>
+                <td>spidy@email.ca</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="example">
+        <div id="accordian">
+          <ul>
+            <li>
+              <h3><span></span> Title One</h3>
+              <div class="row">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut tincidunt risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam id venenatis tortor, a bibendum augue. Sed magna turpis, facilisis in posuere auctor, aliquam eget mauris. Integer non lectus at risus elementum auctor. Aliquam.</p>
+              </div>
+            </li>
+            <li class="active">
+              <h3><span></span> Title Two</h3>
+              <div class="row">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut tincidunt risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam id venenatis tortor, a bibendum augue. Sed magna turpis, facilisis in posuere auctor, aliquam eget mauris. Integer non lectus at risus elementum auctor. Aliquam.</p>
+              </div>
+            </li>
+            <li>
+              <h3><span></span> Title Three</h3>
+              <div class="row">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut tincidunt risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam id venenatis tortor, a bibendum augue. Sed magna turpis, facilisis in posuere auctor, aliquam eget mauris. Integer non lectus at risus elementum auctor. Aliquam.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gallery-row example">
+        <div class="container">
+          <div class="slider">
+            <div class="box1">
+            </div>
+            <div class="box2">
+            </div>
+            <div class="box3">
+            </div>
+            <div class="box4">
+            </div>
+          </div>
+        </div>
+<!--        <div id="test"></div>-->
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>
